@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px
+}
+
+body{
+    font-size: 'popins', 'sans-serif';
+    color: var(--primary-text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+p{
+    font-family: 'Roboto' ,'sans-serif';
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul
+{
+    list-style: none;
+    
+}
+
+/* utility classes */
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    
+}
+
+.hover-link{
+    color: var(--primary-text-color);
+
+}
+
+.hover-link:hover{
+    color: var(--accent-color);
+}
+
+.primaryclass{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    padding: 12px 24px;
+    
+    font-weight: bolder;
+    transition: 0.2s ease-out;
+}
+
+.primaryclass:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) ;
+}
+
+.secondaryclass{
+    background-color: var(--accent-color);
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 900;
+    transition: 0.2s ease;
+}
+
+.secondaryclass:hover{
+    background-color: var(--accent-color-dark);
+}
+
+/* top banner */
+
+.top-banner{
+   background-color: #4fb3d4;
+   background-image: url(asset\ 32.png);
+   background-size: 300px;
+}
+
+.banner-text{
+     color: white; 
+    padding: 15px 30px;
+    text-align: center;
+
+
+}
+
+.main-nav{
+    justify-content: space-between;
+    margin-top:20px ;
+}
+
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+    
+}
+
+header{
+    padding: 50px var(--padding-inline-section) 0;
+
+}
+.header-section
+{
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left p{
+    margin-top: 20px;
+}
+
+.header-right img
+{
+    width: 600px;
+}
+
+.getStarted{
+    margin-top: 20px;
+}
+
+.logos{
+    gap :20px
+}
+
+.companies-header {
+    text-align: center;
+    margin-block: 50px;
+}
+
+.logos{
+    justify-content: space-between;
+}
+
+.logo{
+    height: 40px;
+}
+
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+}
+
+.features-section{
+    text-align: center;
+    background-image: url(asset\ 32.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.features-words{
+    margin-bottom: 20px;
+}
+
+.features-card
+{
+     flex-direction: column;
+     gap: 10px; 
+     max-width: 30%;
+     text-align: center;
+}
+
+
+.big-features-section{
+    padding: 30px var(--padding-inline-section) 0;
+}
+
+
+.big-features-container{
+    gap: 30px;
+}
+
+.features-area{
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.feature-img img{
+    width: 100%;
+
+}
+
+.features-desc{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.examples-header
+{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.examples-card
+{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background-color: black;
+    transition: 0.2s ease-out;
+   
+}
+.card-text{
+    position:absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+.examples-area
+{
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.cta-section{
+    padding: 120px var(--padding-inline-section) 80px;
+   margin-top: 20px;
+   background-color: #183b56;
+ 
+    
+}
+
+.cta-section-container{
+    color: white;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.cta-section-container p{
+    color: white;
+}
+
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+
+}
+
+.subfooter-container{
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+
+
